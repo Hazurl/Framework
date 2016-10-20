@@ -1,12 +1,16 @@
 #pragma once
 
+#include <array>
+
 namespace haz {
 
-	class Statistique
-	{
+	class Statistique {
 	public:
 
-		static double Average(double* _start, double* _end);
-	};
+		//template <typename S, typename T>
+		//static S Average(T[] const& _array, int const& _size);
 
+		template <typename S, typename A>
+		static int Average ( A const& _array );
+	};
 }
